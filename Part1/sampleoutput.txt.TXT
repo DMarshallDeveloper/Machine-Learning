@@ -1,0 +1,150 @@
+Are there any null values? 
+ Unnamed: 0    False
+carat         False
+cut           False
+color         False
+clarity       False
+depth         False
+table         False
+x             False
+y             False
+z             False
+price         False
+dtype: bool
+
+Data Types 
+ Unnamed: 0      int64
+carat         float64
+cut            object
+color          object
+clarity        object
+depth         float64
+table         float64
+x             float64
+y             float64
+z             float64
+price           int64
+dtype: object
+
+Shape:  (53940, 11)
+
+Head
+    Unnamed: 0  carat  depth  ...  clarity_VS2  clarity_VVS1  clarity_VVS2
+0           1   0.23   61.5  ...            0             0             0
+1           2   0.21   59.8  ...            0             0             0
+2           3   0.23   56.9  ...            0             0             0
+3           4   0.29   62.4  ...            1             0             0
+4           5   0.31   63.3  ...            0             0             0
+
+[5 rows x 25 columns]
+
+======
+Correlation to price
+Unnamed: 0      -0.306873
+carat            0.921591
+depth           -0.010647
+table            0.127134
+x                0.884435
+y                0.865421
+z                0.861249
+price            1.000000
+cut_Good        -0.000312
+cut_Ideal       -0.097175
+cut_Premium      0.095706
+cut_Very Good    0.006593
+color_E         -0.101089
+color_F         -0.024161
+color_G          0.008556
+color_H          0.059223
+color_I          0.097125
+color_J          0.081710
+clarity_IF      -0.049596
+clarity_SI1      0.008957
+clarity_SI2      0.128420
+clarity_VS1     -0.009886
+clarity_VS2     -0.001062
+clarity_VVS1    -0.095266
+clarity_VVS2    -0.052381
+Name: price, dtype: float64
+
+ LinearRegression: 
+
+R2: 0.9174724456097386
+MSE: 1297966.0599131251
+RMSE: 1139.2831342177963
+MAE: 743.8652141327641
+Learn: execution time=0.029 seconds
+
+ KNeighborsRegressor: 
+
+R2: 0.9601059667397759
+MSE: 627440.1507156099
+RMSE: 792.1111984536072
+MAE: 377.4655048819676
+Learn: execution time=4.974 seconds
+
+ Ridge: 
+
+R2: 0.9174791414608864
+MSE: 1297860.749782511
+RMSE: 1139.2369155634447
+MAE: 743.9210158485324
+Learn: execution time=0.013 seconds
+
+ DecisionTreeRegressor: 
+
+R2: 0.9998289547197159
+MSE: 2690.143554566803
+RMSE: 51.866593820751355
+MAE: 3.753244345569151
+Learn: execution time=0.263 seconds
+
+ RandomForestRegressor: 
+
+R2: 0.8986073027965129
+MSE: 1594670.78196497
+RMSE: 1262.802748636924
+MAE: 853.9937706627344
+Learn: execution time=2.336 seconds
+
+ GradientBoostingRegressor: 
+
+R2: 0.9963941587267248
+MSE: 56711.47805995682
+RMSE: 238.14171843664187
+MAE: 138.357133668049
+Learn: execution time=5.262 seconds
+
+ SGDRegressor: 
+
+R2: 0.9169775500578952
+MSE: 1305749.6133485888
+RMSE: 1142.6940156264882
+MAE: 749.4688741828454
+Learn: execution time=0.130 seconds
+
+ SVR: 
+
+R2: 0.31641409657884434
+MSE: 10751212.83104947
+RMSE: 3278.904211935669
+MAE: 1742.786307359159
+Learn: execution time=108.981 seconds
+
+ LinearSVR: 
+
+R2: 0.8500957457080881
+MSE: 2357644.4951632814
+RMSE: 1535.4623066566244
+MAE: 798.7689340298012
+Learn: execution time=0.067 seconds
+
+ MLPRegressor: 
+
+R2: 0.99511531874921
+MSE: 76824.64994706846
+RMSE: 277.1725995603975
+MAE: 46.627649181866374
+Learn: execution time=1478.972 seconds
+
+Process finished with exit code 0

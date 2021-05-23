@@ -1,0 +1,113 @@
+
+Data Types 
+ age                int64
+workclass         object
+fnlwgt             int64
+education         object
+education-num      int64
+marital-status    object
+occupation        object
+relationship      object
+race              object
+sex               object
+capital-gain       int64
+capital-loss       int64
+hours-per-week     int64
+native-country    object
+income            object
+dtype: object
+
+Train Shape:  (32561, 15)
+Test Shape:  (16281, 15)
+
+ KNeighborsClassifier: 
+
+Classification Accuracy: 0.7768564584484983
+Precision: 0.547144754316069
+Recall: 0.3213728549141966
+F1-Score: 0.404914004914005
+ROC AUC: 0.6195525311965434
+Learn: execution time=4.816 seconds
+
+ GaussianNB: 
+
+Classification Accuracy: 0.795589951477182
+Precision: 0.6419956140350878
+Recall: 0.3044721788871555
+F1-Score: 0.4130511463844797
+ROC AUC: 0.6259795554668991
+Learn: execution time=0.566 seconds
+
+ SVC: 
+
+Classification Accuracy: 0.7848412259689208
+Precision: 0.9942363112391931
+Recall: 0.08970358814352575
+F1-Score: 0.1645599809205819
+ROC AUC: 0.5447713758972554
+Learn: execution time=168.452 seconds
+
+ DecisionTreeClassifier: 
+
+Classification Accuracy: 0.8025919783797064
+Precision: 0.8405172413793104
+Recall: 0.20280811232449297
+F1-Score: 0.326770004189359
+ROC AUC: 0.5954531112486959
+Learn: execution time=0.741 seconds
+
+ RandomForestClassifier: 
+
+Classification Accuracy: 0.8006264971439101
+Precision: 0.9901960784313726
+Recall: 0.15756630265210608
+F1-Score: 0.2718707940780619
+ROC AUC: 0.5785418968025308
+Learn: execution time=4.685 seconds
+
+ AdaBoostClassifier: 
+
+Classification Accuracy: 0.8148762361034334
+Precision: 0.9837209302325581
+Recall: 0.21996879875195008
+F1-Score: 0.3595410114747131
+ROC AUC: 0.609421472154423
+Learn: execution time=10.552 seconds
+
+ GradientBoostingClassifier: 
+
+Classification Accuracy: 0.806522940851299
+Precision: 0.9873949579831933
+Recall: 0.18330733229329174
+F1-Score: 0.3092105263157895
+ROC AUC: 0.5912917843613623
+Learn: execution time=8.435 seconds
+
+ LinearDiscriminantAnalysis: 
+
+Classification Accuracy: 0.768994533505313
+Precision: 0.9473684210526315
+Recall: 0.0234009360374415
+F1-Score: 0.04567368688150216
+ROC AUC: 0.5114994225824522
+Learn: execution time=1.525 seconds
+
+ MLPClassifier: 
+
+Classification Accuracy: 0.7775935139119219
+Precision: 0.5495376486129459
+Recall: 0.3244929797191888
+F1-Score: 0.4080431584109858
+ROC AUC: 0.6211125935990395
+Learn: execution time=28.667 seconds
+
+ LogisticRegression: 
+
+Classification Accuracy: 0.7978011178674529
+Precision: 0.6915629322268326
+Recall: 0.26001040041601664
+F1-Score: 0.37792894935752075
+ROC AUC: 0.6120719472928494
+Learn: execution time=0.698 seconds
+
+Process finished with exit code 0
